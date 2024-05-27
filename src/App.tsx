@@ -1,12 +1,11 @@
+import { Layout } from "./Layout";
 import Middle from "./main-components/Middle";
-import Navbar from "./main-components/Navbar";
 
 function App() {
   return (
-    <>
-      <Navbar />
+    <Layout>
       <Middle />
-    </>
+    </Layout>
   );
 }
 
