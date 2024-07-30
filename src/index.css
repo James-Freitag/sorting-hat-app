@@ -50,3 +50,8 @@
     transition: all 5s ease-out;
   }
 }
+
+.active {
+  border-bottom: 3px solid rgb(0, 189, 94);
+  border-radius: 10%;
+}
