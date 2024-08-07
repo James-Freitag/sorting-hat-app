@@ -1,6 +1,13 @@
-const FeedLayout = () => {
+const FeedLayout: React.FC<{
+  img: string;
+  username: string;
+  time: string;
+  location: string;
+  text: string;
+  CommentLayout: JSX.Element;
+}> = ({ img, username, time, location, text, CommentLayout }) => {
   return (
-    <div className="w-1/2">
+    <div className="w-full px-2 md:w-[60%]  md:min-w-[1/2]">
       <div className="flex h-fit w-full flex-col space-y-4 rounded-lg bg-neutral-800 p-2 pt-4">
         <div>
           <div>
@@ -8,20 +15,27 @@ const FeedLayout = () => {
               <div className="h-[35px] w-[35px] rounded-full bg-white">
                 <img
                   className="h-[35px] w-[35px] rounded-full object-cover"
-                  src="../../public/ronpic.jpg"
-                  alt="Pic of Ron"
+                  src=""
+                  alt="user profile pic"
                 />
               </div>
               <div>
-                <p className="text-lg font-semibold">User name</p>
+                <p className="text-lg font-semibold">{username}</p>
                 <div className="flex text-sm text-gray-400">
-                  <p>time - hours ago</p>
-                  <p className="px-1">&bull; Location</p>
+                  <p>{time}</p>
+                  <p className="px-1">&bull; {location}</p>
                 </div>
               </div>
             </div>
           </div>
-          <p className="px-2">Post Text</p>
+          <p className="px-2">{text}</p>
+          {img && (
+            <img
+              className="max-h-[500px] w-full object-cover"
+              src={img}
+              alt="image"
+            />
+          )}
         </div>
         <div className="pl-2">
           {/* <GoThumbsup className="rounded-full bg-blue-500 p-1" size={25} /> */}
@@ -39,25 +53,24 @@ const FeedLayout = () => {
           </div>
         </div>
         {/*  ------------------------- Comments ---------------------- */}
-        <div className="comment h-auto w-full">
-          <div className="flex w-full items-center space-x-2 px-2">
-            <div className="h-[35px] min-w-[35px] self-start rounded-full bg-white">
-              <img
-                className="h-[35px] w-[35px] rounded-full object-cover"
-                src="../../public/dracopic.jpg"
-                alt="Draco Pic"
-              />
-            </div>
-
-            <div className="rounded-lg bg-white/10 p-1">
-              <p>User Name</p>
-              <p className="text-sm">Comment</p>
-            </div>
-          </div>
-        </div>
+        {CommentLayout && <div className="px-2">{CommentLayout}</div>}
       </div>
     </div>
   );
 };
+
+// FeedLayout.defaultProps = {
+//   username: "username",
+//   time: "just now",
+//   location: "Hogwarts",
+//   text: "",
+// };
+
+// FeedLayout.propTypes = {
+//   username: PropTypes.string,
+//   time: PropTypes.string,
+//   location: PropTypes.string,
+//   text: PropTypes.string,
+// };
 
 export default FeedLayout;

@@ -1,0 +1,112 @@
+{
+  "posts": [
+    {
+      "postId": 1,
+      "user": {
+        "userId": 101,
+        "name": "Ron Weasley",
+        "profilePicture": ""
+      },
+      "content": "Chudley Cannons for the win! One day we'll make it to the top! 🧡🏆 #ChudleyCannons #QuidditchForever",
+      "timestamp": "2024-08-01T13:48:00Z",
+      "location": "Hogwarts",
+      "likes": 23,
+      "comments": [
+        {
+          "commentId": 1001,
+          "user": {
+            "userId": 102,
+            "name": "Draco Malfoy",
+            "profilePicture": ""
+          },
+          "content": "Still dreaming about the Cannons winning, Weasley? Some things never change. 😂 #KeepDreaming",
+          "timestamp": "2024-08-01T15:00:00Z",
+          "likes": 2
+        },
+        {
+          "commentId": 1002,
+          "user": {
+            "userId": 103,
+            "name": "Harry Potter",
+            "profilePicture": ""
+          },
+          "content": "Oh, come on, Malfoy, we all need something to believe in! Besides, it's about loyalty, something you might not understand. 😉 #CannonsForever",
+          "timestamp": "2024-08-01T15:10:00Z",
+          "likes": 14
+        }
+      ]
+    },
+    {
+      "postId": 2,
+      "user": {
+        "userId": 104,
+        "name": "David Wilson",
+        "profilePicture": ""
+      },
+      "content": "Loving the new book I just started reading!",
+      "timestamp": "2024-08-01T16:20:00Z",
+      "location": "Diagon Alley",
+      "likes": 15,
+      "comments": [
+        {
+          "commentId": 1003,
+          "user": {
+            "userId": 105,
+            "name": "Eve Davis",
+            "profilePicture": ""
+          },
+          "content": "What book is it?",
+          "timestamp": "2024-08-01T16:30:00Z",
+          "likes": 2
+        },
+        {
+          "commentId": 1004,
+          "user": {
+            "userId": 106,
+            "name": "Frank Miller",
+            "profilePicture": ""
+          },
+          "content": "Sounds interesting!",
+          "timestamp": "2024-08-01T16:45:00Z",
+          "likes": 4
+        }
+      ]
+    },
+    {
+      "postId": 2,
+      "user": {
+        "userId": 104,
+        "name": "David Wilson",
+        "profilePicture": ""
+      },
+      "content": "Loving the new book I just started reading!",
+      "timestamp": "2024-08-01T16:20:00Z",
+      "location": "Diagon Alley",
+      "likes": 15,
+      "comments": [
+        {
+          "commentId": 1003,
+          "user": {
+            "userId": 105,
+            "name": "Eve Davis",
+            "profilePicture": ""
+          },
+          "content": "What book is it?",
+          "timestamp": "2024-08-01T16:30:00Z",
+          "likes": 2
+        },
+        {
+          "commentId": 1004,
+          "user": {
+            "userId": 106,
+            "name": "Frank Miller",
+            "profilePicture": ""
+          },
+          "content": "Sounds interesting!",
+          "timestamp": "2024-08-01T16:45:00Z",
+          "likes": 4
+        }
+      ]
+    }
+  ]
+}
